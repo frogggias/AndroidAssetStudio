@@ -45,7 +45,7 @@ a {
 #main-container {
   background-color: #f8f8f8;
   width: 800px;
-  margin: 24px auto;
+  /*margin: 24px auto;*/
   border-radius: 2px;
 }
 
@@ -65,7 +65,7 @@ a {
     font-size: 13px;
     line-height: 13px;
     color: #fff;
-    background-color: #33b5e5;
+    background-color: #5677fc;
     padding: 8px 12px 8px 24px;
     margin-left: -24px;
     margin-bottom: 16px;
@@ -218,7 +218,7 @@ a {
   margin: 0;
   padding: 3px 6px;
   border: 0;
-  border-bottom: 1px solid #33b5e5;
+  border-bottom: 1px solid #5677fc;
   background-color: transparent;
 }
 
@@ -280,7 +280,7 @@ a {
 }
 
 .form-image-clipart-list img.selected {
-  border: 3px solid #33b5e5;
+  border: 3px solid #5677fc;
 }
 
 .form-image-preview {
@@ -316,7 +316,7 @@ a {
 
 .form-range::-webkit-slider-thumb {
   -webkit-appearance:none;
-  background: #33b5e5;
+  background: #5677fc;
   width: 16px;
   height: 16px;
   border-radius: 8px;
@@ -335,7 +335,7 @@ a {
 }
 
 .form-field-drop-target.drag-hover {
-  outline: 2px solid #33b5e5;
+  outline: 2px solid #5677fc;
   outline-offset: 5px;
 }
 
@@ -358,8 +358,8 @@ button {
   line-height: 13px;
   font-weight: 400;
   padding: 8px 16px;
-  background-color: #33b5e5;
-  border: 1px solid #33b5e5;
+  background-color: #5677fc;
+  border: 1px solid #5677fc;
   cursor: pointer;
 }
 
@@ -412,9 +412,9 @@ button:not([disabled]):active {
 
 .form-field-buttonset input:checked + label,
 .form-field-checkbutton:checked + label {
-  background-color: #33b5e5;
+  background-color: #5677fc;
   color: #fff;
-  border-color: #33b5e5;
+  border-color: #5677fc;
 }
 
 /* subforms */
