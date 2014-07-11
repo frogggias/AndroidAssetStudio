@@ -6244,6 +6244,7 @@ studio.forms.ImageField = studio.forms.Field.extend({
 });
 
 studio.forms.ImageField.clipartList_ = [
+  'icons/access-alarms.svg',
 'icons/access-time.svg',
 'icons/accessibility.svg',
 'icons/account-box.svg',
