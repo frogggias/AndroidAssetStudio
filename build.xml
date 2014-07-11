@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="myproject" default="dist" basedir=".">
+  <!--
+  TODO: INSERT LICENSE HEADER HERE
+  -->
+  <description>
+    My example Javascript library Project
+  </description>
+  
+  <!-- global properties -->
+  <property file="build.properties"/>
+  <property file="local.properties"/>
+  <import file="${flintjs.dir}/flintjs.build.xml"/>
+</project>
