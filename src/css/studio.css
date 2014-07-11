@@ -29,7 +29,7 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  background-color: #f0f0f0;
+  background-color: #fff;
   color: #333;
   -webkit-font-smoothing: antialiased;
 }
@@ -39,13 +39,13 @@ strong {
 }
 
 a {
-  color: #09c;
+  color: #5677fc;
 }
 
 #main-container {
-  background-color: #f8f8f8;
+  background-color: #fff;
   width: 800px;
-  /*margin: 24px auto;*/
+  margin: 56px auto;
   border-radius: 2px;
 }
 
@@ -87,7 +87,7 @@ a {
   #page-header h1 {
     font-weight: 100;
     font-size: 36px;
-    line-height: 36px;
+    line-height: 1.5;
     color: #888;
   }
 
@@ -118,7 +118,6 @@ a {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 8px;
-    text-transform: uppercase;
   }
 
     h2 span {
@@ -140,7 +139,7 @@ a {
     }
 
     #breadcrumb em {
-      color: #09c;
+      color: #5677fc;
       font-weight: 600;
     }
 
@@ -164,7 +163,7 @@ a {
     }
 
 #outputs, #footer {
-  border-top: 4px solid #f0f0f0;
+  border-top: 2px solid #f0f0f0;
 }
 
 #inputs h3, #outputs h3 {
@@ -250,7 +249,7 @@ a {
 }
 
 .form-image-clipart-filter:focus {
-  background-color: #09c;
+  background-color: #5677fc;
   outline: 0;
 }
 
@@ -323,7 +322,7 @@ a {
 }
 
 .form-range::-webkit-slider-thumb:active {
-  background: #09c;
+  background: #5677fc;
 }
 
 .form-range-text {
@@ -374,8 +373,8 @@ button[disabled] {
 
 .form-button:not([disabled]):hover,
 button:not([disabled]):hover {
-  background-color: #09c;
-  border-color: #09c;
+  background-color: #5677fc;
+  border-color: #5677fc;
 }
 
 .form-button:not([disabled]):active,
