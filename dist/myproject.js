@@ -5340,11 +5340,17 @@ studio.forms.ColorField = studio.forms.Field.extend({
       showPalette: true,
       palette: [
         ['#fff', '#000'],
-        ['#33b5e5', '#09c'],
-        ['#a6c', '#93c'],
-        ['#9c0', '#690'],
-        ['#fb3', '#f80'],
-        ['#f44', '#c00']
+        ['#e51c23', '#e91e63'],
+        ['#9c27b0', '#673ab7'],
+        ['#3f51b5', '#5677fc'],
+        ['#03a9f4', '#00bcd4'],
+        ['#009688', '#259b24'],
+        ['#8bc34a', '#cddc39'],
+        ['#ffeb3b', '#ffc107'],
+        ['#ff9800', '#ff5722'],
+        ['#795548', '#607d8b'],
+        ['#9e9e9e']
+
       ],
       localStorageKey: 'recentcolors',
       showInitial: true,
@@ -5912,12 +5918,10 @@ studio.forms.ImageField = studio.forms.Field.extend({
       var clipartAttributionEl = $('<div>')
         .addClass('form-image-clipart-attribution')
         .html([
-            'For clipart sources, visit ',
-            '<a href="http://developer.android.com/design/downloads/">',
-                'Android Design: Downloads',
-            '</a>.<br>',
-            'Additional icons can be found at ',
-            '<a href="http://www.androidicons.com">androidicons.com</a>.'
+            'Icons are by Google as a part of the new',
+            '<a href="http://www.google.com/design">',
+                'Material Design',
+            '</a>'
           ].join(''))
         .appendTo(clipartParamsEl);
 
@@ -6244,7 +6248,7 @@ studio.forms.ImageField = studio.forms.Field.extend({
 });
 
 studio.forms.ImageField.clipartList_ = [
-  'icons/access-alarms.svg',
+'icons/access-alarms.svg',
 'icons/access-time.svg',
 'icons/accessibility.svg',
 'icons/account-box.svg',
