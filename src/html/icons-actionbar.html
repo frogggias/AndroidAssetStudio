@@ -136,8 +136,8 @@
             imagelib.drawing.fx([
               {
                 effect: 'fill-color',
-                color: '#333333',
-                opacity: 0.6
+                color: '#000000',
+                opacity: 0.54
               }
             ], outCtx, tmpCtx, iconSize);
           } else if (values['theme'] == 'dark') {
@@ -145,7 +145,7 @@
               {
                 effect: 'fill-color',
                 color: '#ffffff',
-                opacity: 0.8
+                opacity: 0.54
               }
             ], outCtx, tmpCtx, iconSize);
           } else {
@@ -202,17 +202,17 @@
             title: 'Theme',
             buttons: true,
             options: [
-              { id: 'light', title: 'Holo Light' },
-              { id: 'dark', title: 'Holo Dark' },
+              { id: 'light', title: 'Light' },
+              { id: 'dark', title: 'Dark' },
               { id: 'custom', title: 'Custom' }
             ],
             defaultValue: 'light'
           }),
           (customColorField = new studio.forms.ColorField('color', {
             title: 'Custom color',
-            defaultValue: '#33b5e5',
+            defaultValue: '#000',
             alpha: true,
-            defaultAlpha: 60
+            defaultAlpha: 54
           }))
         ]
       });

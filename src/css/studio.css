@@ -85,10 +85,10 @@ a {
   }
 
   #page-header h1 {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 36px;
     line-height: 1.5;
-    color: #888;
+    color: rgba(0,0,0,0.87);
   }
 
   #page-header h1 a {
@@ -113,7 +113,7 @@ a {
   }
 
   h2 {
-    color: #000;
+    color: rgba(0,0,0,0.87);
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -121,7 +121,7 @@ a {
   }
 
     h2 span {
-      color: #888;
+      color: rgba(0,0,0,0.54);
       font-weight: 400;
     }
 
@@ -144,7 +144,7 @@ a {
     }
 
   #page-links ul {
-    margin: 12px 24px;
+    margin: 18px 0;
   }
 
   #page-links li {
@@ -154,7 +154,9 @@ a {
     font-weight: 600;
   }
 
-  #page-linsk li.deprecated {
+  #page-links li a{text-decoration: none;}
+
+  #page-links li.deprecated {
     color: #ccc;
   }
 

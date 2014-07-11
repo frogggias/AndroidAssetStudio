@@ -180,12 +180,10 @@ studio.forms.ImageField = studio.forms.Field.extend({
       var clipartAttributionEl = $('<div>')
         .addClass('form-image-clipart-attribution')
         .html([
-            'For clipart sources, visit ',
-            '<a href="http://developer.android.com/design/downloads/">',
-                'Android Design: Downloads',
-            '</a>.<br>',
-            'Additional icons can be found at ',
-            '<a href="http://www.androidicons.com">androidicons.com</a>.'
+            'Icons are by Google as a part of the new',
+            '<a href="http://www.google.com/design">',
+                'Material Design',
+            '</a>'
           ].join(''))
         .appendTo(clipartParamsEl);
 
