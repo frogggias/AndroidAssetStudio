@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="myproject" default="dist" basedir=".">
+<project name="AndroidAssetStudio" default="dist" basedir=".">
   <!--
   TODO: INSERT LICENSE HEADER HERE
   -->
