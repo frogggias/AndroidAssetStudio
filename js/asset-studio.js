@@ -3625,7 +3625,7 @@ studio.forms.ImageField = studio.forms.Field.extend({
       var clipartAttributionEl = $('<div>')
         .addClass('form-image-clipart-attribution')
         .html([
-            'Icons are by Google as a part of the new ',
+            'Icons are by Google as a part of the new',
             '<a href="http://www.google.com/design">',
                 'Material Design',
             '</a>'
@@ -3987,6 +3987,7 @@ studio.forms.ImageField.clipartList_ = [
 'icons/bluetooth-disabled.svg',
 'icons/bluetooth-searching.svg',
 'icons/bluetooth.svg',
+'icons/bold.svg',
 'icons/book.svg',
 'icons/bookmark-outline.svg',
 'icons/bookmark.svg',
@@ -4147,6 +4148,7 @@ studio.forms.ImageField.clipartList_ = [
 'icons/info-outline.svg',
 'icons/info.svg',
 'icons/invert-colors.svg',
+'icons/italics.svg',
 'icons/keep.svg',
 'icons/keyboard-alt.svg',
 'icons/keyboard-arrow-down.svg',
@@ -4343,6 +4345,7 @@ studio.forms.ImageField.clipartList_ = [
 'icons/traffic.svg',
 'icons/translate.svg',
 'icons/tv.svg',
+'icons/underline.svg',
 'icons/undo.svg',
 'icons/unfold-less.svg',
 'icons/unfold-more.svg',
