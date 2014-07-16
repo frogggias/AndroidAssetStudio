@@ -3625,7 +3625,7 @@ studio.forms.ImageField = studio.forms.Field.extend({
       var clipartAttributionEl = $('<div>')
         .addClass('form-image-clipart-attribution')
         .html([
-            'Icons are by Google as a part of the new',
+            'Icons are by Google as a part of the new ',
             '<a href="http://www.google.com/design">',
                 'Material Design',
             '</a>'
