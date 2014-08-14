@@ -13,3 +13,6 @@ Currently available asset generators area available for:
 - Device-framed screenshots
 - Simple nine-patches
 
+## Modifications
+
+- Modified the ClipArt box to be much larger so its easier to browse.
