@@ -16,3 +16,4 @@ Currently available asset generators area available for:
 ## Modifications
 
 - Modified the ClipArt box to be much larger so its easier to browse.
+- Added the Launcher icon generation link back to the index.html file
