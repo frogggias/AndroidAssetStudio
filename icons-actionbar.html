@@ -100,6 +100,10 @@
       function regenerate() {
         var values = form.getValues();
         var sourceName = values['source'].name;
+        var versionStr = values['sdkversion'];
+        if (versionStr) {
+        	versionStr = versionStr + "-";
+        }
 
         // TODO: poor abstraction here
         $('.out-image-group').toggleClass('dark', values['theme'] == 'dark');
@@ -159,7 +163,7 @@
           }
 
           zipper.add({
-            name: 'res/drawable-' + density + '/' + iconName + '.png',
+            name: 'res/drawable-' + versionStr + density + '/' + iconName + '.png',
             base64data: outCtx.canvas.toDataURL().match(/;base64,(.+)/)[1]
           });
 
@@ -213,7 +217,13 @@
             defaultValue: '#000',
             alpha: true,
             defaultAlpha: 54
-          }))
+          }),
+          new studio.forms.TextField('sdkversion', {
+          	title: 'SDK version',
+          	helpText: 'SDK version suffix (v11)',
+          	defaultValue: 'v11'
+          }
+          ))
         ]
       });
       form.createUI($('#inputs-form').get(0));
