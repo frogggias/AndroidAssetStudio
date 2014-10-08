@@ -81,12 +81,21 @@
       var group = studio.ui.createImageOutputGroup({
         container: $('#outputs')
       });
-      for (var density in {'xxhdpi':1, 'xhdpi':1, 'hdpi':1, 'mdpi':1})
+      
+      createSlots('', true);
+      
+      function createSlots(prefix, lowres) {
+        var dlist = {'xxhdpi':1, 'xhdpi':1, 'hdpi':1, 'mdpi':1};
+        if (!lowres) {
+        	dlist = {'xxhdpi':1, 'xhdpi':1};
+        }
+      	for (var density in dlist)
         studio.ui.createImageOutputSlot({
           container: group,
           id: 'out-icon-' + density,
-          label: density
+          label: density + prefix
         });
+      }
 
       var PARAM_RESOURCES = {
         'iconSize': { w: 32, h: 32 },
@@ -101,9 +110,11 @@
         var values = form.getValues();
         var sourceName = values['source'].name;
         var versionStr = values['sdkversion'];
+        var genLowRes = values['loresfuck'];
         if (versionStr) {
         	versionStr = "-" + versionStr;
         }
+//        createSlots(versionStr, genLowRes);
 
         // TODO: poor abstraction here
         $('.out-image-group').toggleClass('dark', values['theme'] == 'dark');
@@ -120,7 +131,9 @@
         var srcSize = { w: srcCtx.canvas.width, h: srcCtx.canvas.height };
         var srcRect = { x: 0, y: 0, w: srcSize.w, h: srcSize.h };
 
-        for (var density in {'xxhdpi':1, 'xhdpi':1, 'hdpi':1, 'mdpi':1}) {
+		var dlist = genLowRes ? {'xxhdpi':1, 'xhdpi':1, 'hdpi':1, 'mdpi':1} : {'xxhdpi':1, 'xhdpi':1};
+
+        for (var density in dlist) {
           var mult = studio.util.getMultBaseMdpi(density);
           var iconSize = studio.util.multRound(
               PARAM_RESOURCES['iconSize'], mult);
@@ -202,6 +215,11 @@
             helpText: 'Used when generating ZIP files.',
             defaultValue: 'ic_action_example'
           })),
+          new studio.forms.TextField('sdkversion', {
+          	title: 'SDK version',
+          	helpText: 'SDK version suffix (v21)',
+          	defaultValue: 'v21'
+          }),
           new studio.forms.EnumField('theme', {
             title: 'Theme',
             buttons: true,
@@ -218,12 +236,17 @@
             alpha: true,
             defaultAlpha: 54
           }),
-          new studio.forms.TextField('sdkversion', {
-          	title: 'SDK version',
-          	helpText: 'SDK version suffix (v11)',
-          	defaultValue: 'v11'
-          }
-          ))
+          
+          new studio.forms.EnumField('loresfuck', {
+            title: 'LowRes images',
+            buttons: true,
+            options: [
+              { id: true, title: 'Yes' },
+              { id: false, title: 'No' }
+            ],
+            defaultValue: true
+          })
+          )
         ]
       });
       form.createUI($('#inputs-form').get(0));
