@@ -110,7 +110,7 @@
         var values = form.getValues();
         var sourceName = values['source'].name;
         var versionStr = values['sdkversion'];
-        var genLowRes = values['loresfuck'];
+        var genLowRes = values['loresfuck'] == "true";
         if (versionStr) {
         	versionStr = "-" + versionStr;
         }
