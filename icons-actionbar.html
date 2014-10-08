@@ -102,7 +102,7 @@
         var sourceName = values['source'].name;
         var versionStr = values['sdkversion'];
         if (versionStr) {
-        	versionStr = versionStr + "-";
+        	versionStr = "-" + versionStr;
         }
 
         // TODO: poor abstraction here
@@ -163,7 +163,7 @@
           }
 
           zipper.add({
-            name: 'res/drawable-' + versionStr + density + '/' + iconName + '.png',
+            name: 'res/drawable-' + density + versionStr + '/' + iconName + '.png',
             base64data: outCtx.canvas.toDataURL().match(/;base64,(.+)/)[1]
           });
 
